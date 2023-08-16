@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902c29e3afdc8d429e4d1b1cefc5e8d, type: 3}
+  m_Name: Match Data
+  m_EditorClassIdentifier: 
+  noAds: 0
+  skinDataContainer: {fileID: 11400000, guid: 0f1e1e22f3af2c3488931f6b68b1dc0a, type: 2}
+  soundDataContainer: {fileID: 11400000, guid: 740302f7953a6df40be7f7715362f72a, type: 2}
+  currentSkin: 0
+  maxLevel: 40
+  timeToFinish: 5
+  score: 81
+  level: 1
+  isSound: 1
+  isMusic: 0
+  isVibration: 1
+  avalableSkin: 1
+  keys: 0
