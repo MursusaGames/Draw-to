@@ -32,4 +32,7 @@ public class MatchData : ScriptableObject
     public int keys;
     public Sprite zombeeWorldSprite;
     public Sprite pirateWorldSprite;
+    public bool startGame;
+    public int daysCount;
+    public int sessionCount;
 }

@@ -3,6 +3,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using GameAnalyticsSDK;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class LevelController : MonoBehaviour
 {
@@ -37,7 +39,13 @@ public class LevelController : MonoBehaviour
     public bool isChucha;
     private AudioClip currentRunClip;
     public bool help;
-    
+
+    private void OnEnable()
+    {
+        AppMetrica.Instance.ReportEvent("level_start", "level "+thisLevel.ToString()+", day "+data.daysCount.ToString());
+        AppMetrica.Instance.SendEventsBuffer();
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "level " + thisLevel.ToString() + ", day " + data.daysCount.ToString());
+    }
     private void Start()
     {
         currentRunClip = data.soundDataContainer.sounds[data.currentSkin].clip;
@@ -74,6 +82,9 @@ public class LevelController : MonoBehaviour
     }
     public void Reload()
     {
+        AppMetrica.Instance.ReportEvent("level_restart", "level " + thisLevel.ToString() + ", day " + data.daysCount.ToString());
+        AppMetrica.Instance.SendEventsBuffer();
+        
         data.level = thisLevel;
         touchDetector.isMan = false;
         touchDetector.isWoman = false;
@@ -109,7 +120,9 @@ public class LevelController : MonoBehaviour
             touchDetector.stopPlay = true;
             Invoke(nameof(ShowWinWindow), 1f);
             data.level = thisLevel+1;
-            
+            AppMetrica.Instance.ReportEvent("level_complete", "level " + thisLevel.ToString() + ", day " + data.daysCount.ToString());
+            AppMetrica.Instance.SendEventsBuffer();
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "level " + thisLevel.ToString() + ", day " + data.daysCount.ToString());
             PlayerPrefs.SetInt("Level", thisLevel + 1);
             if (thisLevel== data.maxLevel)
             {
@@ -133,7 +146,9 @@ public class LevelController : MonoBehaviour
     }
     private void ShowLoseWindow()
     {
-        if(thisUserNumber>1) 
+        AppMetrica.Instance.ReportEvent("level_fail", "level " + thisLevel.ToString() + ", day " + data.daysCount.ToString());
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "level " + thisLevel.ToString() + ", day " + data.daysCount.ToString());
+        if (thisUserNumber>1) 
             woman.HideVisual();        
         man.HideVisual();
         loseWindow.SetActive(true);
