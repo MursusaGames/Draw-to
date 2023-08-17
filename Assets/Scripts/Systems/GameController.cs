@@ -8,28 +8,33 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] private MatchData data;
     [SerializeField] private SaveDataSystem saveDataSystem;
-    private string dateNow;
+    private int dateNow;
     public void LoadScene()
     {
         SceneManager.LoadScene(data.level);
     }
     private void Start()
     {
-        dateNow = DateTime.Now.DayOfYear.ToString();
-        Debug.Log(dateNow);
+        dateNow = DateTime.Now.DayOfYear;
+        GameAnalytics.Initialize();
         if (data.startGame)
         {
             Dictionary<string, object> fields = new Dictionary<string, object>();
             fields.Add("Day", data.daysCount);
             GameAnalytics.NewDesignEvent("main_menu", fields);
-            AppMetrica.Instance.ReportEvent("main_menu", " Day " + data.daysCount.ToString());            
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters.Add("Day", data.daysCount);
+            AppMetrica.Instance.ReportEvent("main_menu", parameters);            
         }
         else
         {
             CheckDay();
             data.sessionCount++;
-            AppMetrica.Instance.ReportEvent("game_start", "Sessions " + data.sessionCount.ToString() + " Days " + data.daysCount.ToString());
-            AppMetrica.Instance.ReportEvent("main_menu", " Days " + data.daysCount.ToString());
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters.Add("Session", data.sessionCount);
+            parameters.Add("Day", data.daysCount);
+            AppMetrica.Instance.ReportEvent("game_start", parameters);
+            AppMetrica.Instance.ReportEvent("main_menu", parameters);
             Dictionary<string, object> fields = new Dictionary<string, object>();
             fields.Add("Session", data.sessionCount);
             fields.Add("Day", data.daysCount);
@@ -42,14 +47,14 @@ public class GameController : MonoBehaviour
     }
     private void CheckDay()
     {
-        if(PlayerPrefs.GetString("date","0") == dateNow)
+        if(PlayerPrefs.GetInt("date",0) == dateNow)
         {
             return;
         }
         else
         {
             data.daysCount++;
-            PlayerPrefs.SetString("date",dateNow);
+            PlayerPrefs.SetInt("date",dateNow);
         }
         
     }

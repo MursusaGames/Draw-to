@@ -27,6 +27,6 @@ MonoBehaviour:
   keys: 0
   zombeeWorldSprite: {fileID: 21300000, guid: 0d67169af008e9a4690b80a5d59d1046, type: 3}
   pirateWorldSprite: {fileID: 21300000, guid: e4b0f52ac61240a4c8545021e7ecf1cb, type: 3}
-  startGame: 1
-  daysCount: 1
-  sessionCount: 1
+  startGame: 0
+  daysCount: 0
+  sessionCount: 0
