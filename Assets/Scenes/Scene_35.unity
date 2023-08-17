@@ -15924,6 +15924,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 19b37539d4837114c863ae59004769c0, type: 2}
   filledImg: {fileID: 430694060}
   procent: {fileID: 631145612}
+  newWorldImg: {fileID: 388099006}
 --- !u!4 &1843664012
 Transform:
   m_ObjectHideFlags: 0

@@ -30,4 +30,6 @@ public class MatchData : ScriptableObject
     public bool isVibration;
     public int avalableSkin;
     public int keys;
+    public Sprite zombeeWorldSprite;
+    public Sprite pirateWorldSprite;
 }

@@ -7,6 +7,7 @@ public class NewWorldSystem : MonoBehaviour
     [SerializeField] private MatchData data;
     [SerializeField] private Image filledImg;
     [SerializeField] private TextMeshProUGUI procent;
+    [SerializeField] private Image newWorldImg;    
     private float divRange;
     private float progress;
     void OnEnable()
@@ -14,6 +15,7 @@ public class NewWorldSystem : MonoBehaviour
         float score = data.score;
         if(data.avalableSkin == 0)
         {
+            newWorldImg.sprite = data.zombeeWorldSprite;
             divRange = 200f;
             progress = score / divRange;
             if (progress > 1)
@@ -23,7 +25,13 @@ public class NewWorldSystem : MonoBehaviour
         }
         else if(data.avalableSkin == 1)
         {
+            newWorldImg.sprite = data.pirateWorldSprite;
             divRange = 500f;
+            progress = score / divRange;
+        }
+        else if (data.avalableSkin == 2)
+        {
+            divRange = 1000f;
             progress = score / divRange;
         }
         CheckProgress();

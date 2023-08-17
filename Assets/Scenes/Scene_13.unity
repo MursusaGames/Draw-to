@@ -14877,8 +14877,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 19b37539d4837114c863ae59004769c0, type: 2}
-  filledImg: {fileID: 0}
-  procent: {fileID: 0}
+  filledImg: {fileID: 521364263}
+  procent: {fileID: 1076352663}
+  newWorldImg: {fileID: 994469607}
 --- !u!4 &1803756528
 Transform:
   m_ObjectHideFlags: 0
