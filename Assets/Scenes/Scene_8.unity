@@ -6939,6 +6939,10 @@ PrefabInstance:
       propertyPath: levelController
       value: 
       objectReference: {fileID: 749359330}
+    - target: {fileID: 4194029982479989644, guid: 65c39d2a600ec7746b8543b8f5bef97a, type: 3}
+      propertyPath: _testMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4445269971873074149, guid: 65c39d2a600ec7746b8543b8f5bef97a, type: 3}
       propertyPath: data
       value: 
@@ -21728,7 +21732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.74, y: -2.7}
+  m_AnchoredPosition: {x: 1.74, y: -3.42}
   m_SizeDelta: {x: 110.112, y: 253.929}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &448827836074002919
@@ -26222,7 +26226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.84, y: -2.59}
+  m_AnchoredPosition: {x: -1.84, y: -3.37}
   m_SizeDelta: {x: 110.112, y: 253.929}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8581131503011256953

@@ -2764,7 +2764,7 @@ Animator:
   m_GameObject: {fileID: 431092073}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b6e915a77001db4ba4e8bfa6e241152, type: 2}
+  m_Controller: {fileID: 9100000, guid: b8d5a2d8c2e3c9b41a2a948c75b6ab48, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4982,7 +4982,7 @@ Animator:
   m_GameObject: {fileID: 708019315}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b6e915a77001db4ba4e8bfa6e241152, type: 2}
+  m_Controller: {fileID: 9100000, guid: b8d5a2d8c2e3c9b41a2a948c75b6ab48, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7241,7 +7241,7 @@ Animator:
   m_GameObject: {fileID: 1062268360}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b6e915a77001db4ba4e8bfa6e241152, type: 2}
+  m_Controller: {fileID: 9100000, guid: b8d5a2d8c2e3c9b41a2a948c75b6ab48, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8342,7 +8342,7 @@ Animator:
   m_GameObject: {fileID: 1229173795}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b6e915a77001db4ba4e8bfa6e241152, type: 2}
+  m_Controller: {fileID: 9100000, guid: b8d5a2d8c2e3c9b41a2a948c75b6ab48, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14734,7 +14734,7 @@ Animator:
   m_GameObject: {fileID: 1399521475}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b6e915a77001db4ba4e8bfa6e241152, type: 2}
+  m_Controller: {fileID: 9100000, guid: b8d5a2d8c2e3c9b41a2a948c75b6ab48, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -19072,7 +19072,7 @@ Animator:
   m_GameObject: {fileID: 1982010896}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b6e915a77001db4ba4e8bfa6e241152, type: 2}
+  m_Controller: {fileID: 9100000, guid: b8d5a2d8c2e3c9b41a2a948c75b6ab48, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -24687,6 +24687,10 @@ PrefabInstance:
       propertyPath: levelController
       value: 
       objectReference: {fileID: 749359330}
+    - target: {fileID: 4194029982479989644, guid: 65c39d2a600ec7746b8543b8f5bef97a, type: 3}
+      propertyPath: _testMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4445269971873074149, guid: 65c39d2a600ec7746b8543b8f5bef97a, type: 3}
       propertyPath: data
       value: 

@@ -18,8 +18,8 @@ MonoBehaviour:
   currentSkin: 0
   maxLevel: 40
   timeToFinish: 5
-  score: 0
-  level: 1
+  score: 74
+  level: 8
   isSound: 1
   isMusic: 1
   isVibration: 1
@@ -28,5 +28,5 @@ MonoBehaviour:
   zombeeWorldSprite: {fileID: 21300000, guid: 0d67169af008e9a4690b80a5d59d1046, type: 3}
   pirateWorldSprite: {fileID: 21300000, guid: e4b0f52ac61240a4c8545021e7ecf1cb, type: 3}
   startGame: 0
-  daysCount: 0
-  sessionCount: 0
+  daysCount: 3
+  sessionCount: 24

@@ -16682,6 +16682,10 @@ PrefabInstance:
       propertyPath: levelController
       value: 
       objectReference: {fileID: 749359330}
+    - target: {fileID: 4194029982479989644, guid: 65c39d2a600ec7746b8543b8f5bef97a, type: 3}
+      propertyPath: _testMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4445269971873074149, guid: 65c39d2a600ec7746b8543b8f5bef97a, type: 3}
       propertyPath: data
       value: 
