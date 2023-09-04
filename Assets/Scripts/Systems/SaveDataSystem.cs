@@ -10,7 +10,7 @@ public class SaveDataSystem : MonoBehaviour
     void OnEnable()
     {
         currentSound = PlayerPrefs.GetInt("Sound", 1);
-        data.level = PlayerPrefs.GetInt("Level", 1);
+        data.level = PlayerPrefs.GetInt("Level0", 1);
         data.currentSkin = PlayerPrefs.GetInt("Skin", 0);
         data.isMusic = PlayerPrefs.GetInt("Music", 1) == 1;
         data.isVibration = PlayerPrefs.GetInt("Vibration", 1) == 1;

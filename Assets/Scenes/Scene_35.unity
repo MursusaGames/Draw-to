@@ -12590,6 +12590,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 532752531}
     m_Modifications:
+    - target: {fileID: 1045618838617547720, guid: c9a3a6248afc42946814397fd276030b, type: 3}
+      propertyPath: boardX
+      value: 425
+      objectReference: {fileID: 0}
     - target: {fileID: 2818913221971820798, guid: c9a3a6248afc42946814397fd276030b, type: 3}
       propertyPath: m_Name
       value: Hunter (3)
@@ -12664,7 +12668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5728130194930195428, guid: c9a3a6248afc42946814397fd276030b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -235.3
+      value: -327.1
       objectReference: {fileID: 0}
     - target: {fileID: 5728130194930195428, guid: c9a3a6248afc42946814397fd276030b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16973,6 +16977,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 532752531}
     m_Modifications:
+    - target: {fileID: 1045618838617547720, guid: c9a3a6248afc42946814397fd276030b, type: 3}
+      propertyPath: boardX
+      value: 425
+      objectReference: {fileID: 0}
     - target: {fileID: 2818913221971820798, guid: c9a3a6248afc42946814397fd276030b, type: 3}
       propertyPath: m_Name
       value: Hunter (2)
@@ -17047,7 +17055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5728130194930195428, guid: c9a3a6248afc42946814397fd276030b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 186.7
+      value: 245.2
       objectReference: {fileID: 0}
     - target: {fileID: 5728130194930195428, guid: c9a3a6248afc42946814397fd276030b, type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -136,11 +136,11 @@ public class LevelController : MonoBehaviour
             AppMetrica.Instance.ReportEvent("level_complete", parameters);
             AppMetrica.Instance.SendEventsBuffer();
             GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "level " + thisLevel.ToString() + ", day " + data.daysCount.ToString());
-            PlayerPrefs.SetInt("Level", thisLevel + 1);
+            PlayerPrefs.SetInt("Level0", thisLevel + 1);
             if (thisLevel== data.maxLevel)
             {
                 data.level = 1;
-                PlayerPrefs.SetInt("Level", 1);
+                PlayerPrefs.SetInt("Level0", 1);
             }   //TODO level restriction
                 
             data.score += levelScore;

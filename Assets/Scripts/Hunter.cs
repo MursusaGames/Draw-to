@@ -6,7 +6,7 @@ public class Hunter : MonoBehaviour
     [SerializeField] private MatchData data;
     [SerializeField] private Animator osaAnim;
     private Vector3 pos;
-    private float boardX = 425f;
+    [SerializeField] private float boardX = 425f;
     private bool goLeft;
     private bool goRight;
 
